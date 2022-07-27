@@ -1,0 +1,53 @@
+@media only screen and (max-width: 992px) {
+    .main-notes-div{
+        flex-wrap: wrap;
+        width: 80% !important;
+        padding: 2vw;
+    }
+    .note-saves-div{
+        height: min-content !important;
+        width: 100% !important;
+        margin-top: 1vw !important;
+    }
+    .note-div {
+        width: 48%;
+        height: 36vw;
+        margin: 0;
+        margin-right: auto;
+    }
+    .note-text{
+        height: 100%;
+        font-size: 2vw;
+    }
+    .nav-buttons{
+        width: 48%;
+        height: 36vw;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .nav-button{
+        width: 100%;
+        height: 25%;
+        font-size: 2.4vw;
+    }
+    .note-paragraph-div{
+        width: 22vw;
+        height: 20vw;
+        margin-bottom: 0.4vw;
+    }
+    .note-saved{
+        width: 100%;
+        height: 100%;
+        font-size: 1.4vw;
+    }
+    .delete-note-button{
+        font-size: 2vw;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+    .main-notes-div{
+        width: 90% !important;
+    }
+}

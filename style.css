@@ -1,0 +1,199 @@
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    margin: 0;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.note-div {
+    width: 13vw;
+    height: 100%;
+    margin-right: 2vw;
+}
+
+.main-notes-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1vw;
+    width: min-content;
+    background: #d0d0d0;
+    border-radius: 0.5vw;
+    border: solid 0.1vw #252525;
+}
+
+.note {
+    width: 100%;
+    height: 84%;
+    background-color: #EEDD71;
+    padding: 0.5vw;
+    padding-top: 0vw;
+    padding-bottom: 1vw;
+}
+
+.note-gradient {
+    background: rgb(185, 170, 78);
+    background: linear-gradient(0deg, rgba(185, 170, 78, 1) 0%, rgba(228, 210, 95, 1) 60%, rgba(255, 255, 255, 1) 100%);
+    width: 100%;
+    height: 8%;
+}
+
+.note-shadow {
+    background: rgb(238, 221, 113);
+    background: linear-gradient(0deg, rgba(238, 221, 113, 1) 40%, rgba(164, 162, 142, 1) 100%);
+    width: 100%;
+    height: 8%;
+}
+
+.note-text {
+    background: transparent;
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    width: 100%;
+    height: 12vw;
+    font-size: 1.4vw;
+    cursor: default;
+}
+
+.note-text::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+.note-text::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.25vw;
+}
+
+.note-text::-webkit-scrollbar-thumb {
+    background: rgb(72, 72, 72);
+    border-radius: 0.25vw;
+}
+
+.note-saved {
+    background-color: #EEDD71;
+    width: 11vw;
+    min-width: 11vw;
+    height: 100%;
+    padding: 0.5vw;
+    margin: 0;
+    font-size: 1.2vw;
+    word-break: break-all;
+    white-space: normal;
+    display: flex;
+}
+
+.note-saves-div {
+    background-color: #b5b5b5;
+    display: flex;
+    justify-content: left;
+    overflow: scroll;
+    overflow-y: hidden;
+    width: 53vw;
+    padding: 0.4vw 0.8vw;
+    border-radius: 0.4vw;
+}
+
+.note-saves-div::-webkit-scrollbar {
+    height: 0.5vw;
+}
+
+.note-saves-div::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 0.25vw;
+}
+
+.note-saves-div::-webkit-scrollbar-thumb {
+    background: rgb(72, 72, 72);
+    border-radius: 0.25vw;
+}
+
+.delete-note-button {
+    background: #EEDD71;
+    border: none;
+    border-style: none;
+    font-size: 1.2vw;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+    border-radius: 0vw 0.5vw 0.5vw 0vw;
+    width: min-content;
+}
+
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2vw;
+    height: 100%;
+    padding: 0.2vw 0;
+}
+
+.nav-button {
+    width: 9vw;
+    background: #EEDD71;
+    border: none;
+    border-style: none;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #252525;
+    cursor: pointer;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    border: solid 0.1vw #252525;
+}
+
+.add-button {
+    background: #77EE71;
+}
+
+.clear-button {
+    background: #EE9E9E;
+}
+
+.delete-all-button {
+    background: #EE7171;
+}
+
+.separator {
+    width: 0.1vw;
+    height: 15vw;
+}
+
+.note-paragraph-div {
+    margin-top: 0.5vw;
+    width: 13vw;
+    height: 11vw;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.5vw;
+}
+
+.delete-note-div {
+    width: min-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}

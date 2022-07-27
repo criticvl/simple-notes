@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./adaptive.css" />
+    <link rel="icon" type="image/x-icon" href="./notes.ico" />
+    <title>Simple Notes</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="main-div">
+        <div class="main-notes-div">
+          <div class="note-div">
+            <div class="note-gradient"></div>
+            <div class="note-shadow"></div>
+            <div class="note">
+              <textarea id="hello" class="note-text"></textarea>
+            </div>
+          </div>
+          <div class="nav-buttons">
+            <button onclick="addNote()" class="nav-button add-button">
+              Add Note
+            </button>
+            <button onclick="clearText()" class="nav-button clear-button">
+              Clear Text
+            </button>
+            <button onclick="deleteAll()" class="nav-button delete-all-button">
+              Delete All Notes
+            </button>
+          </div>
+
+          <div class="note-saves-div"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
